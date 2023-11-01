@@ -1,18 +1,18 @@
 .linkEstilo {
-    color: black;
-    text-decoration-line: none;
+    color: #000;
+    text-decoration: none;
 }
 
-.espacio{
+.espacio {
     margin-right: 2rem;
 }
 
-.imagenTamaño{
+.imagenTamaño {
     width: 8%;
     padding: 0%;
 }
 
-.derecha{
+.derecha {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -32,7 +32,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #333; 
+    color: #fff; 
     padding: 1rem;
     z-index: 100;
 }
@@ -45,23 +46,22 @@ footer {
     padding-right: 2cm;
 }
 
-.horizontaldos{
+.horizontaldos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-.redPosicion{
+.redPosicion {
     display: flex;
     align-content: center;
     justify-content: center;
-    color: black;
+    color: #000; 
     margin-right: 3rem;
 }
 
-.izquierda{
+.izquierda {
     display: flex;
     align-content: flex-start;
-    justify-content:left;
+    justify-content: left; 
 }

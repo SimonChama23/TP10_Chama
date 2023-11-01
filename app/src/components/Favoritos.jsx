@@ -1,59 +1,38 @@
-import './Home.css'
-import React from 'react'
-import { useState, useEffect, useContext } from 'react'
-import { FavoritosContext } from "../Context/FavoritosContext"
-import Favorito from './Favorito'
+import React, { useContext } from 'react';
+import './Home.css';
+import Favorito from './Favorito';
+import { FavoritosContext } from '../Context/FavoritosContext';
 
 const Favoritos = (props) => {
-  const { favoritos, setFavoritos } = useContext(FavoritosContext)
-
-  console.log('favoritos tiene: ', favoritos)
+  const { favoritos } = useContext(FavoritosContext);
 
   return (
     <div className='margengrande bottom'>
       <h1>Tus favoritos</h1>
-      {favoritos.length > 1 ? (
-        favoritos.map((favoritos) =>
-          <section className='creacion' key={favoritos.id}>
+      {favoritos.length > 0 ? (
+        favoritos.map((favorito) => (
+          <section className='creacion' key={favorito.id}>
             <div className='espacioCreacion rowHome'>
               <div className='col-4'>
-                <p>● Proyecto {favoritos.id}</p>
-                <p className='tituloProyecto'><b>{favoritos.nombre}</b></p>
-                <p>{favoritos.descripcion}</p>
-                <p>Lenguaje: {favoritos.leguaje}</p>
-                <p>{favoritos.fecha}</p>
-                <a className='linkRepositorio' href={favoritos.respositorio} target="_blank">{favoritos.respositorio}</a>
-                <Favorito id={favoritos.id} />
+                <p>● Proyecto {favorito.id}</p>
+                <p className='tituloProyecto'><b>{favorito.nombre}</b></p>
+                <p>{favorito.descripcion}</p>
+                <p>Lenguaje: {favorito.leguaje}</p>
+                <p>{favorito.fecha}</p>
+                <a className='linkRepositorio' href={favorito.respositorio} target="_blank">{favorito.respositorio}</a>
+                <Favorito id={favorito.id} />
               </div>
               <div className='separacion'>
-                <img className='imagen' src={favoritos.imagen ? favoritos.imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
+                <img className='imagen' src={favorito.imagen || 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
               </div>
             </div>
           </section>
-        )) : favoritos.length === 1 ? (
-          <>
-            <section className='creacion'>
-              <div className='espacioCreacion rowHome'>
-                <div className='col-4'>
-                  <p>● Proyecto {favoritos[0].id}</p>
-                  <p className='tituloProyecto'><b>{favoritos[0].nombre}</b></p>
-                  <p>{favoritos[0].descripcion}</p>
-                  <p>Lenguaje: {favoritos[0].leguaje}</p>
-                  <p>{favoritos[0].fecha}</p>
-                  <a className='linkRepositorio' href={favoritos[0].respositorio} target="_blank">{favoritos[0].respositorio}</a>
-                  <Favorito id={favoritos[0].id} />
-                </div>
-                <div className='separacion'>
-                  <img className='imagen' src={favoritos[0].imagen ? favoritos[0].imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
-                </div>
-              </div>
-            </section>
-          </>) : (
-        <><h1>No hay elementos todavía</h1></>
-      )
-      }
+        ))
+      ) : (
+        <h1>No hay elementos todavía</h1>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Favoritos
+export default Favoritos;

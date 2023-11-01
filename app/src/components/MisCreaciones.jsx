@@ -1,21 +1,21 @@
-import './Home.css'
+import './MisCreaciones.css';
 import Favorito from './Favorito';
 import React, { useState, useContext } from 'react';
 import { CreacionesContext } from "../Context/CreacionesContext";
 
 const MisCreaciones = (props) => {
-  const { creaciones, setCreaciones } = useContext(CreacionesContext)
-  const elementosPorPagina = 5
-  const [paginaActual, setPaginaActual] = useState(1)
+  const { creaciones, setCreaciones } = useContext(CreacionesContext);
+  const elementosPorPagina = 5;
+  const [paginaActual, setPaginaActual] = useState(1);
 
   const obtenerPosiciones = () => {
-    const ultimoElemento = paginaActual * elementosPorPagina
-    const primerElemento = ultimoElemento - elementosPorPagina
-    return creaciones.slice(primerElemento, ultimoElemento)
+    const ultimoElemento = paginaActual * elementosPorPagina;
+    const primerElemento = ultimoElemento - elementosPorPagina;
+    return creaciones.slice(primerElemento, ultimoElemento);
   }
 
   const cambiarPagina = (siguientePag) => {
-    setPaginaActual(siguientePag)
+    setPaginaActual(siguientePag);
   }
 
   return (
@@ -34,7 +34,7 @@ const MisCreaciones = (props) => {
               <Favorito id={creacion.id} />
             </div>
             <div className='separacion'>
-              <img className='imagen' src={creacion.imagen ? creacion.imagen : 'https://www.ciudaddemascotas.com/pub/media/wysiwyg/BlogImages/Junio2016/gato-feliz.jpg'} />
+              <img className='imagen' src={creacion.imagen ? creacion.imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
             </div>
           </div>
         </section>

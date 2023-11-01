@@ -1,0 +1,22 @@
+.info-container {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 4rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.info-title {
+    font-size: 2.5rem;
+}
+
+.info-subtitle {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #999999; 
+}
+
+.info-year {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #999999; 
+}

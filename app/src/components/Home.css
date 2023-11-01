@@ -1,13 +1,9 @@
-
-
-h1,
-h2,
-h4 {
+h1, h2, h4 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
 }
 
-.tituloProyecto{
+.tituloProyecto {
     font-size: 3rem;
 }
 
@@ -36,23 +32,24 @@ h4 {
     margin-top: 20px;
 }
 
-a{
+a {
     color: #ffffff;
 }
 
-.linkRepositorio{
+.linkRepositorio {
     margin-bottom: 5rem;
+    color: #ffffff;
 }
 
-.rowHome{
+.rowHome {
     display: flex;
 }
 
-.espacioCreacion{
+.espacioCreacion {
     margin: 3rem;
 }
 
-.imagen{
+.imagen {
     margin-left: 10rem;
     min-width: 25rem;
     max-width: 30rem;
@@ -62,9 +59,10 @@ a{
     transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     transition-delay: 0s;
     transition-property: border-radius;
+    border-radius: 5px; 
 }
 
-.separacion{
+.separacion {
     margin-left: 20rem;
     border-left: 2px solid white;
     display: flex;
@@ -72,13 +70,20 @@ a{
     justify-self: center;
 }
 
-.estiloBoton{
+.estiloBoton {
     background-color: transparent;
     color: #ffffff;
     border-color: #ffffff;
     border-radius: 5rem;
     padding: 0.5rem;
     margin-top: 2rem;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.estiloBoton:hover {
+    background-color: #333; 
+    color: #fff;
 }
 
 p {
@@ -109,7 +114,7 @@ p {
 .paginacion button {
     padding: 5px 10px;
     margin: 0 5px;
-    background-color: #007bff;
+    background-color: #333; 
     color: #fff;
     border: none;
     cursor: pointer;

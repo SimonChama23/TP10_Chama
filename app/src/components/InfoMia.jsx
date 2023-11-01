@@ -1,16 +1,14 @@
-
-import React from "react"
-
+import React from "react";
+import './InfoMia.css'; 
 
 const InfoMia = (props) => {
-
   return (
-    <div>
-      <h1 className='margengrande'>Simon Chama</h1>
-      <h1 className=''>5ID ORT</h1>
-      <h1 className=''>2023</h1>
+    <div className="info-container">
+      <h1 className='info-title margengrande'>Simon Chama</h1>
+      <h2 className='info-subtitle'>5ID ORT</h2>
+      <p className='info-year'>2023</p>
     </div>
-  )
-}
+  );
+};
 
-export default InfoMia
+export default InfoMia;
