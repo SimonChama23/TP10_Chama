@@ -26,7 +26,7 @@ const Favoritos = (props) => {
                 <Favorito id={favoritos.id} />
               </div>
               <div className='separacion'>
-                <img className='imagen' src={favoritos.imagen ? favoritos.imagen : 'https://www.ciudaddemascotas.com/pub/media/wysiwyg/BlogImages/Junio2016/gato-feliz.jpg'} />
+                <img className='imagen' src={favoritos.imagen ? favoritos.imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
               </div>
             </div>
           </section>
@@ -44,7 +44,7 @@ const Favoritos = (props) => {
                   <Favorito id={favoritos[0].id} />
                 </div>
                 <div className='separacion'>
-                  <img className='imagen' src={favoritos[0].imagen ? favoritos[0].imagen : 'https://www.ciudaddemascotas.com/pub/media/wysiwyg/BlogImages/Junio2016/gato-feliz.jpg'} />
+                  <img className='imagen' src={favoritos[0].imagen ? favoritos[0].imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
                 </div>
               </div>
             </section>

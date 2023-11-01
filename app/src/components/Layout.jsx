@@ -16,7 +16,7 @@ const Layout = () => {
         <div className="layout-container">
             <Navbar expand="lg" className="bg-body-tertiary fixed-top">
                 <Container>
-                    <Navbar.Brand className="espacio">Camila Aylen Lopez</Navbar.Brand>
+                    <Navbar.Brand className="espacio">Simon Chama</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="justify-content-end">

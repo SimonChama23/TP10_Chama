@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Titulo = () => {
-    const text = 'Proyectos de Camila Lopez :)';
+    const text = 'Proyectos de Simon Chama :)';
     const [displayText, setDisplayText] = useState('');
     const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   

@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'NextBro';
-    src: local('NextBro'), url(../assets/Fonts/next_bro/NextBro.otf) format('opentype');
-}
+
 
 h1,
 h2,
@@ -22,7 +19,6 @@ h4 {
 .tituloPrincipal {
     display: flex;
     justify-content: flex-start;
-    font-family: NextBro;
     font-size: 10rem;
     color: #ffffff;
     margin-top: 10rem;
