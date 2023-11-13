@@ -1,7 +1,9 @@
 import './MisCreaciones.css';
 import Favorito from './Favorito';
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, Text  } from 'react';
 import { CreacionesContext } from "../Context/CreacionesContext";
+import { Link } from 'react-router-dom';
+
 
 const MisCreaciones = (props) => {
   const { creaciones, setCreaciones } = useContext(CreacionesContext);
@@ -30,7 +32,9 @@ const MisCreaciones = (props) => {
               <p>{creacion.descripcion}</p>
               <p>Lenguaje: {creacion.leguaje}</p>
               <p>{creacion.fecha}</p>
-              <a className='linkRepositorio' href={creacion.respositorio} target="_blank">{creacion.respositorio}</a>
+              <Link className='linkRepositorio' to={creacion.respositorio}>
+                <Text>oljñkj</Text>
+              </Link>
               <Favorito id={creacion.id} />
             </div>
             <div className='separacion'>
