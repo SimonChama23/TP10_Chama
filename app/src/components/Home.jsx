@@ -12,30 +12,7 @@ const Home = (props) => {
             <section>
                 <Titulo />
             </section>
-            {creaciones.slice(0, 6).map((creacion) => (
-                <section className='creacion' key={creacion.id}>
-                    <div className='espacioCreacion rowHome'>
-                        <div className='col-4'>
-                            <p>● Proyecto {creacion.id}</p>
-                            <p className='tituloProyecto'><b>{creacion.nombre}</b></p>
-                            <p>{creacion.descripcion}</p>
-                            <p>Lenguaje: {creacion.leguaje}</p>
-                            <p>{creacion.fecha}</p>
-                            <a className='linkRepositorio' href={creacion.respositorio} target="_blank">
-                                {creacion.respositorio}
-                            </a>
-                            <Favorito id={creacion.id} />
-                        </div>
-                        <div className='separacion'>
-                            <img
-                                className='imagen'
-                                src={creacion.imagen || 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'}
-                            />
-                        </div>
-                    </div>
-                </section>
-            ))}
-        </div>
+            </div>
     );
 };
 
