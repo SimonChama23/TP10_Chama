@@ -9,18 +9,17 @@ import { FavoritosContext } from '../Context/FavoritosContext';
 import Badge from '@mui/material/Badge';
 
 const Layout = () => {
-  const { favoritos, setFavoritos } = useContext(FavoritosContext);
+  const { favoritos } = useContext(FavoritosContext);
 
   return (
     <div className="layout-container">
       <Navbar expand="lg" className="bg-body-tertiary fixed-top">
         <Container>
-          <Navbar.Brand className="espacio">Simon Chama</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end">
-              <Link to={'/'} className="linkEstilo espacio">
-                Home
+            <Link to={"./"} className="linkEstilo espacio">
+                Simon Chama
               </Link>
               <Link to={'/InfoMia'} className="linkEstilo espacio">
                 Información Mia
@@ -84,7 +83,7 @@ const Layout = () => {
             </div>
           </div>
           <div>
-            <h5 className="izquierda">Contact Me</h5>
+            <h5 className="izquierda">Contactanos</h5>
             <Formik
               initialValues={{ name: '', email: '' }}
               onSubmit={async (values) => {
@@ -95,7 +94,7 @@ const Layout = () => {
               <Form>
                 <Field name="name" type="text" />
                 <Field name="email" type="email" />
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar</button>
               </Form>
             </Formik>
           </div>
