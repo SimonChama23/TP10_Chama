@@ -17,13 +17,13 @@ const Favoritos = (props) => {
                 <p>● Proyecto {favorito.id}</p>
                 <p className='tituloProyecto'><b>{favorito.nombre}</b></p>
                 <p>{favorito.descripcion}</p>
-                <p>Lenguaje: {favorito.leguaje}</p>
+                <p>Lenguaje: {favorito.lenguaje}</p>
                 <p>{favorito.fecha}</p>
-                <a className='linkRepositorio' href={favorito.respositorio} target="_blank">{favorito.respositorio}</a>
+                <a className='linkRepositorio' href={favorito.repositorio} target="_blank">{favorito.repositorio}</a>
                 <Favorito id={favorito.id} />
               </div>
               <div className='separacion'>
-                <img className='imagen' src={favorito.imagen || 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
+                <img className='imagen' src={favorito.imagen || 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} alt="Proyecto" />
               </div>
             </div>
           </section>
