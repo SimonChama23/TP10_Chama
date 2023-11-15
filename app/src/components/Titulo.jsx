@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Titulo = () => {
-  const text = 'Proyectos de Simon Chama :)';
+  const text = 'Proyectos de Simon Chama';
   const [displayText, setDisplayText] = useState(text);
   
   useEffect(() => {
