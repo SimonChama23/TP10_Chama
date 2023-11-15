@@ -46,7 +46,7 @@ const Favoritos = (props) => {
                                     type="email"
                                     className="form-control"
                                     id="email1"
-                                    placeholder="Your email address..."
+                                    placeholder="Su mail..."
                                 />
                             </div>
                             <div className="form-group">
@@ -56,7 +56,7 @@ const Favoritos = (props) => {
                                     type="password"
                                     className="form-control"
                                     id="password1"
-                                    placeholder="Your password..."
+                                    placeholder="Su contraseña..."
                                 />
                             </div>
                             <button type="button" className="btn btn-info btn-block btn-round" onClick={handleClose}>
@@ -64,7 +64,7 @@ const Favoritos = (props) => {
                             </button>
                         </form>
 
-                        <div className="text-center text-muted delimiter">or use a social network</div>
+                        <div className="text-center text-muted delimiter">o use una red social</div>
                         <div className="d-flex justify-content-center social-buttons">
                             <button type="button" className="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
                                 <i className="fab fa-twitter"></i>

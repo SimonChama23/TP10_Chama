@@ -1,12 +1,11 @@
 import './MisCreaciones.css';
 import Favorito from './Favorito';
-import React, { useState, useContext, Text  } from 'react';
+import React, { useState, useContext } from 'react';
 import { CreacionesContext } from "../Context/CreacionesContext";
 import { Link } from 'react-router-dom';
 
-
 const MisCreaciones = (props) => {
-  const { creaciones, setCreaciones } = useContext(CreacionesContext);
+  const { creaciones } = useContext(CreacionesContext);
   const elementosPorPagina = 5;
   const [paginaActual, setPaginaActual] = useState(1);
 
@@ -32,13 +31,13 @@ const MisCreaciones = (props) => {
               <p>{creacion.descripcion}</p>
               <p>Lenguaje: {creacion.leguaje}</p>
               <p>{creacion.fecha}</p>
-              <Link className='linkRepositorio' to={creacion.respositorio}>
-                <Text>oljñkj</Text>
+              <Link className='linkRepositorio' to={{ pathname: creacion.respositorio }}>
+                {creacion.nombre}
               </Link>
               <Favorito id={creacion.id} />
             </div>
             <div className='separacion'>
-              <img className='imagen' src={creacion.imagen ? creacion.imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} />
+              <img className='imagen' src={creacion.imagen ? creacion.imagen : 'https://img.remediosdigitales.com/e6d4ad/mclaren-p1-gtr-5p/1366_2000.jpg'} alt="Project" />
             </div>
           </div>
         </section>

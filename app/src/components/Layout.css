@@ -1,5 +1,5 @@
 .linkEstilo {
-    color: #000;
+    color: #ff0000; 
     text-decoration: none;
 }
 
@@ -32,10 +32,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #9c9c9c ; 
+    color: #ff0000;
     padding: 1rem;
     z-index: 100;
+    opacity: 1;
 }
 
 .horizontal {
@@ -56,12 +57,12 @@ footer {
     display: flex;
     align-content: center;
     justify-content: center;
-    color: #000; 
+    color: #ff0000;
     margin-right: 3rem;
 }
 
 .izquierda {
     display: flex;
     align-content: flex-start;
-    justify-content: left; 
+    justify-content: left;
 }

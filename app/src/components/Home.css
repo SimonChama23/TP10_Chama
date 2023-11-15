@@ -1,10 +1,11 @@
 h1, h2, h4 {
     text-align: center;
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .tituloProyecto {
     font-size: 3rem;
+    color: #ff0000;
 }
 
 .centrarJust {
@@ -16,29 +17,30 @@ h1, h2, h4 {
     display: flex;
     justify-content: flex-start;
     font-size: 10rem;
-    color: #ffffff;
+    color: #ff0000; 
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
 
 .margenTopInicial {
     margin-top: 4rem;
+    color: #ff0000; 
 }
 
 .creacion {
     margin-left: 5rem;
     margin-right: 5rem;
-    border-top: 2px solid white;
+    border-top: 2px solid #ff0000; 
     margin-top: 20px;
 }
 
 a {
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .linkRepositorio {
     margin-bottom: 5rem;
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .rowHome {
@@ -54,7 +56,7 @@ a {
     min-width: 25rem;
     max-width: 30rem;
     max-height: 30rem;
-    transition: border-radius .275s cubic-bezier(.47, 0, .745, .715);
+    transition: border-radius 0.275s cubic-bezier(0.47, 0, 0.745, 0.715);
     transition-duration: 0.275s;
     transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     transition-delay: 0s;
@@ -64,7 +66,7 @@ a {
 
 .separacion {
     margin-left: 20rem;
-    border-left: 2px solid white;
+    border-left: 2px solid #ff0000; 
     display: flex;
     align-self: center;
     justify-self: center;
@@ -72,12 +74,12 @@ a {
 
 .estiloBoton {
     background-color: transparent;
-    color: #ffffff;
-    border-color: #ffffff;
+    color: #ff0000; 
+    border-color: #ff0000; 
     border-radius: 5rem;
     padding: 0.5rem;
     margin-top: 2rem;
-    border: 2px solid #ffffff;
+    border: 2px solid #ff0000;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -87,17 +89,17 @@ a {
 }
 
 p {
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .margengrande {
     margin-top: 8rem;
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .blando {
     margin-top: 10rem;
-    color: #ffffff;
+    color: #ff0000; 
 }
 
 .bottom {

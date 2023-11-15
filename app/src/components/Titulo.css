@@ -1,13 +1,13 @@
 .margenTopInicial {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   
   .tituloPrincipal {
     display: flex;
     justify-content: flex-start;
-    font-size: 10rem;
-    color: #ffffff;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    font-size: 3rem;
+    color: #ff0000;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   
