@@ -2,7 +2,6 @@ import './MisCreaciones.css';
 import Favorito from './Favorito';
 import React, { useState, useContext } from 'react';
 import { CreacionesContext } from "../Context/CreacionesContext";
-import { Link } from 'react-router-dom';
 
 const MisCreaciones = (props) => {
   const { creaciones } = useContext(CreacionesContext);
@@ -29,11 +28,9 @@ const MisCreaciones = (props) => {
               <p>● Proyecto {creacion.id}</p>
               <p className='tituloProyecto'><b>{creacion.nombre}</b></p>
               <p>{creacion.descripcion}</p>
-              <p>Lenguaje: {creacion.leguaje}</p>
+              <p>Lenguaje: {creacion.lenguaje}</p>
               <p>{creacion.fecha}</p>
-              <Link className='linkRepositorio' to={{ pathname: creacion.respositorio }}>
-                {creacion.nombre}
-              </Link>
+              <a className='linkRepositorio' href={creacion.repositorio} target="_blank">{creacion.repositorio}</a>
               <Favorito id={creacion.id} />
             </div>
             <div className='separacion'>
