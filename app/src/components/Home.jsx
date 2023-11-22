@@ -19,9 +19,9 @@ const Home = (props) => {
                             <p>● Proyecto {creacion.id}</p>
                             <p className='tituloProyecto'><b>{creacion.nombre}</b></p>
                             <p>{creacion.descripcion}</p>
-                            <p>Lenguaje: {creacion.leguaje}</p>
+                            <p>Lenguaje: {creacion.lenguaje}</p>
                             <p>{creacion.fecha}</p>
-                            <a className='linkRepositorio' href={creacion.respositorio} target="_blank" rel="noopener noreferrer">{creacion.respositorio}</a>
+                            <a className='linkRepositorio' href={creacion.repositorio} target="_blank">{creacion.repositorio}</a>
                             <Favorito id={creacion.id} />
                         </div>
                         <div className='separacion'>
